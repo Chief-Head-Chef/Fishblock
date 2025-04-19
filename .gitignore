@@ -19,3 +19,4 @@ minecraftinstance.json
 /Dev/build
 /Dev/.gradle
 /Dev/gradle.properties
+/Dev/run
