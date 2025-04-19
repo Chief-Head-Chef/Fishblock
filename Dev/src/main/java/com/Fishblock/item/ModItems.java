@@ -2,28 +2,33 @@ package com.FishBlock.item;
 
 import net.minecraft.item.FishingRodItem;
 import net.minecraft.item.Item;
-import net.minecraft.util.Identifier;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
 
 public class ModItems {
-    
-    public static final Item WOOD_ROD = register("wood_rod", new FishingRodItem(new Item.Settings().maxDamage(59)));
+    // ---- item declarations ----
+    public static final Item WOOD_ROD = register(
+            "wood_rod",
+            settings -> new FishingRodItem(settings.maxDamage(59))
+    );
 
-    // public static final Item STONE_ROD = register("stone_rod", new ModFishingRodItem(RodMaterials.STONE, new Item.Settings()));
-    // public static final Item IRON_ROD = register("iron_rod", new ModFishingRodItem(RodMaterials.IRON, new Item.Settings()));
-    // public static final Item GOLD_ROD = register("gold_rod", new ModFishingRodItem(RodMaterials.GOLD, new Item.Settings()));
-    // public static final Item DIAMOND_ROD = register("diamond_rod", new ModFishingRodItem(RodMaterials.DIAMOND, new Item.Settings()));
-    // public static final Item NETHERITE_ROD = register("netherite_rod", new ModFishingRodItem(RodMaterials.NETHERITE, new Item.Settings()));
-    // public static final Item ENDERIUM_ROD = register("enderium_rod", new ModFishingRodItem(RodMaterials.ENDERIUM, new Item.Settings()));
+    // template for future rods:
+    // public static final Item STONE_ROD = register("stone_rod",
+    //        settings -> new ModFishingRodItem(RodMaterials.STONE, settings));
 
-    private static Item register(String name, Item item) {
-        net.minecraft.util.Identifier id = new net.minecraft.util.Identifier("fishblock", name);
-        return Registry.register(Registries.ITEM, id, item);
+    // ---- helper ----
+    private static Item register(String path, java.util.function.Function<Item.Settings, Item> factory) {
+        Identifier id          = Identifier.of("fishblock", path);
+        RegistryKey<Item> key  = RegistryKey.of(RegistryKeys.ITEM, id);
+
+        Item.Settings settings = new Item.Settings().registryKey(key);
+        Item item              = factory.apply(settings);
+
+        return Registry.register(Registries.ITEM, key, item);
     }
-    
 
-    public static void registerAll() {
-        // Called during mod init
-    }
+    public static void registerAll() { /* load‑side effect only */ }
 }
