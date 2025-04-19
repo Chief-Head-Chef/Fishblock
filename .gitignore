@@ -10,3 +10,7 @@
 # Optional: Ignore unwanted files within the mods folder (like log files or backups)
 Fishblock/instances/Fishblock/mods/*.log
 Fishblock/instances/Fishblock/mods/*.bak
+/Install
+Instances/Fishblock/logs/latest.log
+Instances/Fishblock/logs/telemetry/20250419-1.json
+Instances/Fishblock/options.txt
