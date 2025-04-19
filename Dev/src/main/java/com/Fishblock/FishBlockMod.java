@@ -18,8 +18,8 @@ public class FishBlockMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		ModItems.registerAll(); 
-		LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
+		LOGGER.info("Hello fishblock world!");
 	}
 
 }
