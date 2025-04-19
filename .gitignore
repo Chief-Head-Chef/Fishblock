@@ -15,3 +15,5 @@
 /Instances/Fishblock/usercache.json
 minecraftinstance.json
 .curseclient
+#Don't commit build artifacts 
+/Dev/build
