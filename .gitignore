@@ -1,1 +1,12 @@
-Install
+# Ignore everything
+*
+!README.md
+# But do not ignore these folders
+!Fishblock/instances/Fishblock/mods/
+
+# Allow all files inside the mods folder
+!Fishblock/instances/Fishblock/mods/**
+
+# Optional: Ignore unwanted files within the mods folder (like log files or backups)
+Fishblock/instances/Fishblock/mods/*.log
+Fishblock/instances/Fishblock/mods/*.bak
