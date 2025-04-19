@@ -7,6 +7,7 @@ Fish available from pool will be generic (tier 1, basic resources)
 -Stonefish
 -Dirtfish
 
+Tier 2: 
 
 
 Fisbowls are chests (early game, no automation)
