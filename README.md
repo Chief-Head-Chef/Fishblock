@@ -21,6 +21,7 @@ Stonefish
 Dirtfish
 Stringfish
 
+Tier 2: 
 
 
 Fisbowls are chests (early game, no automation)
