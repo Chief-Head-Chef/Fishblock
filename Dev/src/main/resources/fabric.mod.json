@@ -19,15 +19,11 @@
 			"com.FishBlock.FishBlockMod"
 		],
 		"client": [
-			"com.FishBlock.ExampleModClient"
+			"com.FishBlock.FishBlockModClient"
 		]
 	},
 	"mixins": [
-		"fishblock.mixins.json",
-		{
-			"config": "fishblock.client.mixins.json",
-			"environment": "client"
-		}
+  "fishblock.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
