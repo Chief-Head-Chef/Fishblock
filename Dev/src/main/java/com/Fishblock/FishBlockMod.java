@@ -2,8 +2,11 @@ package com.FishBlock;
 
 import net.fabricmc.api.ModInitializer;
 import com.FishBlock.item.ModItems;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.ItemGroups;  
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import net.minecraft.item.ItemGroups;   
 
 public class FishBlockMod implements ModInitializer {
 	public static final String MOD_ID = "fishblock";
@@ -19,6 +22,9 @@ public class FishBlockMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 		ModItems.registerAll(); 
+		ItemGroupEvents
+		.modifyEntriesEvent(ItemGroups.TOOLS)
+		.register(entries -> entries.add(ModItems.WOOD_ROD));
 		LOGGER.info("Hello Fabric world!");
 	}
 
