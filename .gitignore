@@ -1,16 +1,15 @@
-# Ignore everything
-*
-!README.md
-# But do not ignore these folders
-!Fishblock/instances/Fishblock/mods/
-
-# Allow all files inside the mods folder
-!Fishblock/instances/Fishblock/mods/**
-
-# Optional: Ignore unwanted files within the mods folder (like log files or backups)
-Fishblock/instances/Fishblock/mods/*.log
-Fishblock/instances/Fishblock/mods/*.bak
 /Install
-Instances/Fishblock/logs/latest.log
-Instances/Fishblock/logs/telemetry/20250419-1.json
-Instances/Fishblock/options.txt
+/Downloads
+/Instances/Fishblock/.fabric
+/Instances/Fishblock/config
+/Instances/Fishblock/data
+/Instances/Fishblock/downloads
+/Instances/Fishblock/logs
+#keep mods folder
+/Instances/Fishblock/resourcepacks
+/Instances/Fishblock/saves
+/Instances/Fishblock/.curseclient
+/Instances/Fishblock/minecraftinstance.json
+/Instances/Fishblock/options.txt
+/Instances/Fishblock/realms_persistence.json
+/Instances/Fishblock/usercache.json
