@@ -1,4 +1,4 @@
-package com.Fishblock.Main;
+package com.Fishblock.FishblockMod;
 
 import net.fabricmc.api.ModInitializer;
 
@@ -6,7 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class FishblockMod implements ModInitializer {
-	public static final String MOD_ID = "modid";
+	public static final String MOD_ID = "fishblock";
 
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.

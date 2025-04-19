@@ -1,31 +1,31 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "fishblock",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "FishBlock",
+	"description": "Fish to your hearts content!",
 	"authors": [
-		"Me!"
+		"Chef",
+		"Meyers"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://https://github.com/Chief-Head-Chef/Fishblock"
 	},
-	"license": "CC0-1.0",
 	"icon": "assets/modid/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.FishBlock.FishBlockMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.FishBlock.ExampleModClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
+		"fishblock.mixins.json",
 		{
-			"config": "modid.client.mixins.json",
+			"config": "fishblock.client.mixins.json",
 			"environment": "client"
 		}
 	],
