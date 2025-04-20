@@ -10,10 +10,10 @@ import net.minecraft.world.level.levelgen.Heightmap;
 
 import java.util.function.Supplier;
 
-@EventBusSubscriber(modid = Aquaculture.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
-public class AquaEntities {
+@EventBusSubscriber(modid = fishblock.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+public class entity {
     public static final DeferredRegister<EntityType<?>> ENTITY_DEFERRED = DeferredRegister.create(Registries.ENTITY_TYPE, fishblock.MOD_ID);
-    public static final DeferredHolder<EntityType<?>, EntityType<AquaFishingBobberEntity>> BOBBER = register("bobber", () -> EntityType.Builder.<AquaFishingBobberEntity>of(AquaFishingBobberEntity::new, MobCategory.MISC)
+    public static final DeferredHolder<EntityType<?>, EntityType<fishingbobber>> BOBBER = register("bobber", () -> EntityType.Builder.<fishingbobber>of(fishingbobber::new, MobCategory.MISC)
             .noSave()
             .noSummon()
             .sized(0.25F, 0.25F)
