@@ -18,7 +18,8 @@ public class ItemInit
     public static final DeferredRegister.Items ITEM_DEFERRED = DeferredRegister.createItems(fishblock.MOD_ID);
     public static final Collection<DeferredItem<Item>> ITEMS_FOR_TAB_LIST = new ArrayList<>();
 
-
+    public static final DeferredItem<Item> WOOD_FISHING_ROD = registerWithTab(p -> new testrod(ToolMaterial.WOOD, p.durability(75)), "wood_fishing_rod");
+    public static final DeferredItem<Item> STONE_FISHING_ROD = registerWithTab(p -> new testrod(ToolMaterial.STONE, p.durability(105)), "stone_fishing_rod");
     public static final DeferredItem<Item> IRON_FISHING_ROD = registerWithTab(p -> new testrod(ToolMaterial.IRON, p.durability(125)), "iron_fishing_rod");
     public static final DeferredItem<Item> GOLD_FISHING_ROD = registerWithTab(p -> new testrod(ToolMaterial.GOLD, p.durability(55)), "gold_fishing_rod");
     public static final DeferredItem<Item> DIAMOND_FISHING_ROD = registerWithTab(p -> new testrod(ToolMaterial.DIAMOND, p.durability(450)), "diamond_fishing_rod");

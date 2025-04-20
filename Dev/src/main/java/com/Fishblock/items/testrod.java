@@ -1,11 +1,5 @@
 package com.Fishblock.items;
 
-import com.teammetallurgy.aquaculture.api.AquacultureAPI;
-import com.teammetallurgy.aquaculture.api.fishing.Hook;
-import com.teammetallurgy.aquaculture.api.fishing.Hooks;
-import com.teammetallurgy.aquaculture.entity.AquaFishingBobberEntity;
-import com.teammetallurgy.aquaculture.init.AquaDataComponents;
-import com.teammetallurgy.aquaculture.misc.AquaConfig;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
@@ -25,11 +19,7 @@ import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.neoforged.neoforge.capabilities.Capabilities;
-import net.neoforged.neoforge.common.ItemAbilities;
-import net.neoforged.neoforge.common.ItemAbility;
-import net.neoforged.neoforge.common.util.FakePlayer;
-import net.neoforged.neoforge.items.ItemStackHandler;
+
 
 import javax.annotation.Nonnull;
 import java.util.function.Consumer;
